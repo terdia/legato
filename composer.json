@@ -1,0 +1,40 @@
+{
+    "name": "legato/legato",
+    "description": "A Legato framework",
+    "keywords": ["le","php", "framework"],
+    "license": "MIT",
+    "type":"project",
+    "authors": [
+        {
+            "name": "Osayawe Ogbemudia Terry",
+            "email":"terry@devscreencast.com",
+            "homepage": "https://devscreencast.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "legato/framework": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":"app"
+        },
+        "files":["app/function/helpers.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "copy__missing_env": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],"post-root-package-install": [
+            "@composer copy__missing_env"
+        ]
+    },
+    "config":{
+        "optimize-autoloader":true,
+        "preferred-install": "dist"
+    }
+}
