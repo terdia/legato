@@ -1,4 +1,5 @@
-# Legato PHP Framework
+# Legato PHP Framework - Beta
+
 ## About Legato
 
 Legato is a web application framework that seats on the shoulder 
