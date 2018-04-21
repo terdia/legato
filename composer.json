@@ -18,8 +18,7 @@
     "autoload": {
         "psr-4": {
             "App\\":"app"
-        },
-        "files":["app/function/helpers.php"]
+        }
     },
     "autoload-dev": {
         "psr-4": {

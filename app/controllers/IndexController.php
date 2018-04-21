@@ -6,6 +6,6 @@ class IndexController extends BaseController
 
     public function show()
     {
-        expose('home.twig');
+        view('home');
     }
 }
