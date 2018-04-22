@@ -9,3 +9,6 @@ before_script:
 
 script:
 - "phpunit -c phpunit.xml --exclude-group ignore"
+
+notifications:
+  slack: devscreencast:SQHxEakITrmYuilwcRN7QRWX
