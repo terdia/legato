@@ -4,6 +4,7 @@ namespace Tests;
 use GuzzleHttp\Client;
 use PHPUnit\Framework\TestCase;
 
+
 class RouteTest extends TestCase
 {
     protected $client;
@@ -15,7 +16,8 @@ class RouteTest extends TestCase
     }
     
     /**
-     *  @test
+     * @group ignore
+     * @test
      */
     public function can_see_app_home_page()
     {
