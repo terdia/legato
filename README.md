@@ -1,4 +1,5 @@
 # Legato PHP Framework - Beta
+[![Build Status](https://travis-ci.org/terdia/legato.svg?branch=master)](https://travis-ci.org/terdia/legato)
 
 ## About Legato
 
