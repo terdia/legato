@@ -7,7 +7,7 @@ Legato is a web application framework that seats on the shoulder
 of giants like symfony and laravel, when you need a lightweight framework for PHP development. 
 
 ## Installation Requirements
-php 7 and above
+php 7.1 and above
 composer 
 
 ## Installation
@@ -18,6 +18,21 @@ $ cd blog
 
 $ composer dumpautoload
 ```
+
+## Running Your Project
+The entry point for Legato framework is the index.php file inside of public directory, off course you're free to change this according to your need. You may need to create an entry in /etc/httpd/vhosts (for apache users) similar to the following:
+
+```
+<VirtualHost *:80>
+    DocumentRoot /var/www/html/blog
+    ServerName example.com
+</VirtualHost>
+```
+Restart Apache
+```bash
+$ service httpd restsart
+```
+Navigatte to http://example.com, you should be able to view the app.
 
 ## Learning Legato
 
