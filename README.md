@@ -1,9 +1,9 @@
 # Legato PHP Framework - Beta
 [![Build Status](https://travis-ci.org/terdia/legato.svg?branch=master)](https://travis-ci.org/terdia/legato)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/43a822fd888750a58205/maintainability)](https://codeclimate.com/github/terdia/legato/maintainability)
 ## About Legato
 
-Legato is a web application framework that seats on the shoulder 
+Legato is a web application framework that seats on the shoulders 
 of giants like symfony and laravel, when you need a lightweight framework for PHP development. 
 
 ## Installation Requirements
