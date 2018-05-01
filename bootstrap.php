@@ -17,6 +17,8 @@ $whoops = new Run;
 $container = Container::getInstance();
 $request = Request::createFromGlobals();
 
+new \Legato\Framework\Connection();
+
 if (getenv('APP_ENV') !== 'production') {
     $whoops->pushHandler(
         new PrettyPageHandler
