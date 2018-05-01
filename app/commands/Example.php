@@ -5,21 +5,21 @@ use Legato\Framework\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class Welcome extends Command
+class Example extends Command
 {
     /**
      * Identifier for the console command
      *
      * @var string
      */
-    protected $commandName = 'welcome:greeting';
+    protected $commandName = 'example:command';
 
     /**
      * Command description
      *
      * @var string
      */
-    protected $description = 'Basic command with argument';
+    protected $description = 'Sample command without argument';
 
     public function __construct($name = null)
     {
@@ -35,6 +35,6 @@ class Welcome extends Command
      */
     public function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln('The Legato framework, build that next app');
+        $output->write('This is a sample command.');
     }
 }
