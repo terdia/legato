@@ -6,10 +6,13 @@ use Illuminate\Container\Container;
 use Legato\Framework\Routing\RouteDispatcher;
 use Whoops\Handler\PrettyPageHandler;
 use Symfony\Component\HttpFoundation\Response;
+use Legato\Framework\Routing\Route;
 
 define('BASE_PATH', realpath(__DIR__.'/'). DIRECTORY_SEPARATOR);
 
 require_once __DIR__ . "/vendor/autoload.php";
+require_once __DIR__ .'/routes/routes.php';
+
 $dot_env = new Dotenv\Dotenv(BASE_PATH);
 $dot_env->load();
 
@@ -38,5 +41,5 @@ if(!$session->isStarted()){
     $session->start();
 };
 
-$route = require_once __DIR__ .'/routes/routes.php';
+$route = Route::all();
 new RouteDispatcher($request, $container, $session, $route);
