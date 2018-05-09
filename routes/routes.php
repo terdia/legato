@@ -1,8 +1,11 @@
 <?php
+/**
+ * Your application routes go here
+ */
+use Legato\Framework\Routing\Route;
 
-$dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $router){
-    $router->addRoute('GET', '/', 'App\Controllers\IndexController@show');
-    //add routes here
+Route::get('/', 'App\Controllers\IndexController@show');
+
+Route::get('/user/{id}', function ($id) {
+    echo 'Example route using closure '.$id;
 });
-
-return $dispatcher;
