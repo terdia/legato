@@ -6,7 +6,7 @@
 Legato is a web application framework that seats on the shoulders 
 of giants like symfony and laravel, when you need a lightweight framework for PHP development. 
 
-## Installation
+## Documentation
 https://github.com/terdia/legato/wiki 
 
 ## Learning Legato
