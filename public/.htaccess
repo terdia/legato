@@ -1,4 +1,10 @@
 # Turn Rewrite Engine On
 RewriteEngine on
+
+#uncomment below line if you're accessing your project directly e.g localhost/blog/public
+#also remember to update css and js path from /css/all.css to css.all.css
+RewriteBase /public
+
 RewriteCond %{REQUEST_FILENAME} !-f
+
 RewriteRule . index.php [L]
