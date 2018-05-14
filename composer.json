@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "legato/framework": "^1.0"
+        "legato/framework": "dev-develop"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.1"
