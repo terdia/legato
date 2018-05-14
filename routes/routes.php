@@ -6,6 +6,6 @@ use Legato\Framework\Routing\Route;
 
 Route::get('/', 'App\Controllers\IndexController@show');
 
-Route::get('/user/{id}', function ($id) {
+Route::get('/user/[i:id]', function ($id) {
     echo 'Example route using closure '.$id;
 });
