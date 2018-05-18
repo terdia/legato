@@ -1,5 +1,4 @@
 <?php
-use Symfony\Component\HttpFoundation\Session\Session;
 use Whoops\Run;
 use Legato\Framework\Request;
 use Illuminate\Container\Container;
@@ -20,6 +19,9 @@ $whoops = new Run;
 $container = Container::getInstance();
 $request = Request::createFromGlobals();
 
+/**
+ * Initialize database connection
+ */
 new \Legato\Framework\Connection();
 
 if (getenv('APP_ENV') !== 'production') {
@@ -36,10 +38,5 @@ if (getenv('APP_ENV') !== 'production') {
 }
 $whoops->register();
 
-$session = new Session;
-if(!$session->isStarted()){
-    $session->start();
-};
-
 $route = Route::all();
-new RouteDispatcher($request, $container, $session, $route);
+new RouteDispatcher($request, $container, $route);
