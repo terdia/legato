@@ -14,6 +14,8 @@ of giants like symfony and laravel, when you need a lightweight framework for PH
 
 ## Learning Legato
 
+[Devscreencast Video Tutorials](http://bit.ly/2rYoeyv)
+
 [Youtube Videos](http://bit.ly/2rRANf8)
 
 ## Contributing
