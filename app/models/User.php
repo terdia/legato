@@ -7,7 +7,7 @@ use Legato\Framework\Fluent;
 class User extends Fluent
 {
     /**
-     * Database fields that can be populated with mass assignment
+     * Database fields that can be populated with mass assignment.
      *
      * @var array
      */

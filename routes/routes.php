@@ -1,6 +1,6 @@
 <?php
 /**
- * Your application routes go here
+ * Your application routes go here.
  */
 use Legato\Framework\Routing\Route;
 
