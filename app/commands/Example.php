@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Command;
 
 use Legato\Framework\Command;
@@ -8,14 +9,14 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Example extends Command
 {
     /**
-     * Identifier for the console command
+     * Identifier for the console command.
      *
      * @var string
      */
     protected $commandName = 'example:command';
 
     /**
-     * Command description
+     * Command description.
      *
      * @var string
      */
@@ -25,12 +26,13 @@ class Example extends Command
     {
         parent::__construct($name);
     }
-    
+
     /**
-     * You command logic
+     * You command logic.
      *
-     * @param InputInterface $input
+     * @param InputInterface  $input
      * @param OutputInterface $output
+     *
      * @return void
      */
     public function execute(InputInterface $input, OutputInterface $output)

@@ -1,13 +1,11 @@
 <?php
-namespace App\Controllers;
 
+namespace App\Controllers;
 
 class IndexController extends BaseController
 {
-
     public function show()
     {
-
         view('home');
     }
 }
