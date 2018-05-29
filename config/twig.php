@@ -6,6 +6,6 @@ return [
     ],
     'extensions' => [
         'global' => \Legato\Framework\TwigGlobal::class,
-        'debug' => \Twig_Extension_Debug::class,
+        'debug'  => \Twig_Extension_Debug::class,
     ],
 ];
