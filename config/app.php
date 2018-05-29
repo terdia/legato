@@ -8,5 +8,14 @@ return [
      */
     'dependencies' => [
        //example: \Legato\Framework\Request::class => 'shared',
+    ],
+    'auth' => [
+        'fields' => ['username', 'email'],
+        'model' => \App\Models\User::class,
+        'activation' => [], //column name => value
+    ],
+    'encryption' => [
+        'key' => 'euyq74taeoqiertpeuyq74taeoqiertp',
+        'cipher' => 'AES-128-CBC'
     ]
 ];
