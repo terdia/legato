@@ -23,6 +23,9 @@ of giants like symfony and laravel, when you need a lightweight framework for PH
 Thank you for considering contributing to the Legato framework! Feel free to create a pull request.
 The contribution guide will be released soon.
 
+## Slack Channels
+[Join Legato Slack Group](https://join.slack.com/t/legatoframework/shared_invite/enQtMzczODM4MTUyODcxLTZhOTc1YjA4YWE5OGZkMDFhN2U3OGRmOThmNWJkZjBlYTE4M2U2MDcwNDBhNTdhMWU0NjA4MjEwODY4MGIyMjk)
+
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Legato, 
