@@ -1,4 +1,4 @@
-##UPGRADE FROM 1.1.1 to 1.1.2
+## UPGRADE FROM 1.1.1 to 1.1.2
 
 Follow this simple guide to update from 1.1.1 to 1.1.2, this guide assumes you have 
 already update to 1.1.2 via composer.
@@ -85,4 +85,33 @@ return [
  **Note:** if you want the dependency to be shared then set the value to `shared`, 
  if you want to bind the dependency as `singleton` 
  otherwise just set it to `bind`
+ 
+ ### Authentication And Encryption Support
+ 
+ To take advantage of Authentication and Encryption update `app.php` as shown below:
+ 
+ ```php
+ <?php
+ 
+ return [
+     /*
+      * class that should be automatically resolved by the IOC
+      * value can be: shared, bind, singleton
+      */
+     'dependencies' => [
+        //example: \Legato\Framework\Request::class => 'shared',
+     ],
+     'auth' => [
+         'fields' => ['username', 'email'],
+         'model' => \App\Models\User::class,
+         'activation' => [], //column name => value
+     ],
+     'encryption' => [
+         'key' => 'euyq74taeoqiertpeuyq74taeoqiertp',
+         'cipher' => 'AES-128-CBC'
+     ]
+ ];
+ 
+ ```
 
+**Note:** complete docs for Authentication and encryption will be added soon.
