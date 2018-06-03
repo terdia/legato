@@ -1,5 +1,5 @@
 @extends('layouts.base')
-@section('title', 'Homepage');
+@section('title', 'Homepage')
 
 @section('body')
     <div class="text-center">
