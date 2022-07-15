@@ -8,8 +8,6 @@ Legato is a web application framework that sits on the shoulders of giants like 
 
 ## Documentation
 
-[Stable](http://bit.ly/2ke1fwh)
-
 [Stabled and Versioned Docs](http://bit.ly/2IyIbaF)
 
 ## Learning Legato
@@ -30,7 +28,7 @@ The contribution guide will be released soon.
 
 If you discover a security vulnerability within Legato,
 please send an e-mail to Terry Ogbemudia Osayawe
-via [terry@devscreencast.com](mailto:terry@devscreencast.com).
+via [terrymarcy2000@yahoo.com](mailto:terrymarcy2000@yahoo.com).
 All security vulnerabilities will be promptly addressed.
 
 ## License
